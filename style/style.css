@@ -116,12 +116,14 @@
         height: 200px;
         width: 100%;
         grid-area: foto3;
+        margin-bottom: 30px;
     }
 
     .foto4 {
         height: 200px;
         width: 100%;
         grid-area: foto4;
+        margin-bottom: 30px;
     }
 
     /*user.html*/
