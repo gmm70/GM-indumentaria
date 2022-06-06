@@ -1,0 +1,640 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
+
+}
+
+@media screen and (max-width:425px) {
+
+    /*encabezado*/
+    header {
+        width: 100%;
+    }
+
+    .inicio {
+        width: auto;
+        align-items: center;
+    }
+
+    .inicio a img {
+        width: 53.53px;
+        height: 58.91px;
+    }
+
+    .barra {
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+
+    .barra nav ul {
+        height: 17px;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+
+    .barra nav ul {
+        width: 100%;
+        font-size: 15px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .barra nav ul li a {
+        padding: 4px;
+        width: 100%;
+        height: auto;
+    }
+
+    .barra ul li a:hover {
+        color: #e35b34;
+        font-size: 17px;
+    }
+
+    .active-pink input.form-control[type=text] {
+        border-bottom: 1px solid #e35b34;
+        box-shadow: 0 1px 0 0 #e35b34;
+        width: 100%;
+        height: 20px;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: -10px;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
+        border-bottom: 1px solid #e35b34;
+        box-shadow: 0 1px 0 0 #e35b34;
+        color: #182145;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /*section del index*/
+
+    .galeria {
+        display: grid;
+        grid-template-rows: 140px 200px 200px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas:
+            "foto1 foto1"
+            "foto2 foto2"
+            "foto3 foto4"
+    }
+
+    .foto1 {
+        height: 140px;
+        width: 100%;
+        grid-area: foto1;
+    }
+
+    .foto2 {
+        height: 200px;
+        width: 100%;
+        grid-area: foto2;
+    }
+
+    .foto3 {
+        height: 200px;
+        width: 100%;
+        grid-area: foto3;
+    }
+
+    .foto4 {
+        height: 200px;
+        width: 100%;
+        grid-area: foto4;
+    }
+
+    /*user.html*/
+
+    .logeo h2 {
+        font-size: 20px;
+    }
+
+    .logeo label {
+        font-size: 17px;
+    }
+
+    .logeo p {
+        font-size: 17px;
+    }
+
+    /*footer*/
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+
+    p.foot {
+        font-size: 15px;
+    }
+
+    /*hombre.html*/
+    h2 {
+        font-size: 25px;
+    }
+    .todo{
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+
+    .filtro {
+        height: 26px;
+        width: 42%;
+        margin-left: 57%;
+        margin-right: 300px;
+        overflow-y: scroll;
+    }
+
+    .filtro div p {
+        font-size: 15px;
+    }
+
+    .t {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40px;
+        margin-left: 0px;
+    }
+
+    .marca2 {
+        height: 30px;
+        width: 30%;
+    }
+
+    .marca {
+        height: 30px;
+        width: 30%;
+    }
+
+    .todo ul{
+        margin: 0px;
+        padding: 0;
+    }
+
+    .talle {
+        height: 20px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .catalogo div {
+        width: 100% 
+        height: 100%;
+    }
+
+    .catalogo div p {
+        font-size: 13px;
+    }
+
+    .catalogo div img {
+        width: 165px;
+        height: 165px;
+    }
+    .col-md-3{
+        height: 140px;
+    }
+
+    .col-md-3 h5{
+        font-size: 17px;
+    }
+   
+    .font-weight-bold{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .col-md-3 ul li{
+        margin-top: -7px;
+    }
+    
+    .col-md-3 ul li a{
+        color: #F9F3EE;
+        font-size: 15px;
+    }
+    .footer-copyright{
+        padding: 0px;
+        padding-left: 0px;
+    }
+    
+    footer {
+        height: 360px;
+    }
+}
+
+/*este @media screen and (min-width:426px) lo utilicé para que los componentes y sus medidas me quedaran de forma ordenada en la versión de desktop,
+    no encontré otra forma de solucionarlo*/
+
+@media screen and (min-width:426px) {
+
+    .menu a img {
+        margin-left: 40px;
+    }
+
+    .galeria {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.5fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-items: stretch;
+        grid-template-areas:
+            "foto1 foto1 foto1"
+            "foto2 foto3 foto4"
+    }
+
+    .foto1 {
+        grid-area: foto1;
+        height: 350px;
+        width: 100%;
+    }
+
+    .foto2 {
+        grid-area: foto2;
+        height: 350px;
+        width: 100%;
+    }
+
+    .foto3 {
+        grid-area: foto3;
+        height: 350px;
+        width: 100%;
+    }
+
+    .foto4 {
+        grid-area: foto4;
+        height: 350px;
+        width: 474px;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .menu img {
+        width: 57px;
+        height: 57px;
+    }
+
+
+    .barra ul li a {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .barra ul li a:hover {
+        color: #e35b34;
+        font-size: 27px;
+    }
+
+    .active-pink input.form-control[type=text] {
+        border-bottom: 1px solid #e35b34;
+        box-shadow: 0 1px 0 0 #e35b34;
+        width: 100%;
+        height: 30px;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: -30px;
+        margin-top: -15px;
+    }
+
+    .active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
+        border-bottom: 1px solid #e35b34;
+        box-shadow: 0 1px 0 0 #e35b34;
+        color: #182145;
+    }
+
+
+
+    .todo {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 180px auto 16.393%;
+        grid-template-rows: 50px 30px auto;
+        gap: 5px 5px;
+        grid-template-areas:
+            ". titulo ."
+            ". . filtro"
+            "marca catalogo ."
+
+    }
+
+    .t {
+        grid-area: marca;
+    }
+
+
+    .filtro {
+        height: 25px;
+        width: 100%;
+    }
+
+    .marca {
+        height: 140px;
+        width: 120px;
+    }
+
+    .marca ul{
+        margin-left: -25px;
+    }
+
+    .marca2 {
+        height: 30px;
+        width: 120px;
+    }
+
+    .marca2 ul{
+        margin-left: -25px;
+    }
+
+    .talle {
+        height: 16px;
+        width: 120px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+    .catalogo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .col-md-3 h5{
+        font-size: 20px;
+    } 
+    
+    .col-md-3 ul li a{
+        color: #F9F3EE;
+        font-size: 15px;
+    }
+    
+    footer {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+
+}
+
+
+/*comienzo del css de toda la pagina*/
+
+html {
+    background-color: #F9F3EE;
+}
+
+.tituloIndex {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*encabezado de la pagina*/
+
+header {
+    display: grid;
+    grid-template-columns: 17.65% auto 17.65%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: sticky;
+    top: 0%;
+    background-color: #F9F3EE;
+    border-bottom: 5px solid #e35b34;
+    align-items: center;
+    justify-items: stretch;
+    z-index: 40;
+}
+
+.inicio {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+}
+
+.inicio a img {
+    width: 17.65;
+    object-fit: contain;
+}
+
+
+.barra {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.barra ul {
+    display: flex;
+    list-style: none;
+    text-align: right;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.barra ul li a {
+    text-decoration: none;
+    color: #182145;
+}
+
+.menu {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+}
+
+.menu a img {
+    object-fit: cover;
+}
+
+
+/*fin del encabezado*/
+
+/*section del index*/
+
+.galeriab {
+    display: flex;
+}
+
+
+/*fin del section del index*/
+
+/*footer*/
+footer {
+    background-color: #182145;
+    color: #F9F3EE;
+    margin-top: -30px;
+    border-top: 5px solid #e35b34;
+}
+
+.foot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+    color: #F9F3EE;
+    padding: 7px;
+    margin: 0;
+}
+
+/*fin del footer*/
+
+/*user.html*/
+
+.logeo {
+    color: rgb(24, 33, 69);
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: rgb(24, 33, 69) 2px solid;
+}
+
+.enviar {
+    width: 50%;
+    height: 50px;
+    margin-right: px;
+    text-align: center;
+    color: rgb(227, 91, 52);
+    background-color: rgb(24, 33, 69);
+    border-radius: 20px;
+    border: rgb(24, 33, 69) 2px solid;
+}
+
+.logeo p a {
+    text-decoration: none;
+    color: rgb(24, 33, 69);
+}
+
+/*calzado y demas html del sitio web*/
+
+h2{
+    
+}
+
+.todo {
+    background-color: #F9F3EE;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(24, 33, 69);
+    grid-area: titulo;
+}
+
+
+.filtro {
+    color: rgb(24, 33, 69);
+    text-align: right;
+    margin-bottom: 20px;
+    border: solid rgb(227, 91, 52) 3px;
+    overflow: auto;
+    font-size: 15px;
+    border-radius: 10px;
+    grid-area: filtro;
+}
+
+
+.marca {
+    background-color: rgb(227, 91, 52);
+    color: rgb(24, 33, 69);
+    overflow: auto;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    grid-area: marca;
+}
+
+.marca2 {
+    background-color: rgb(227, 91, 52);
+    color: rgb(24, 33, 69);
+    overflow: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    grid-area: marca;
+}
+
+.talle {
+    background-color: rgb(227, 91, 52);
+    color: rgb(24, 33, 69);
+    overflow: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    grid-area: marca;
+}
+
+.lista {
+    padding-bottom: 0.5px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+
+.catalogo img {
+    margin: 4px;
+}
+
+.catalogo p {
+    font-size: 15px;
+}
+
+.catalogo div {
+    max-width: 210px;
+    max-height: 210px;
+    display: inline-block;
+}
+
+.catalogo {
+    grid-area: catalogo;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.catalogo img:hover {
+    transform: scale(1.1);
+    border: 2px outset transparent;
+    border-image: linear-gradient(to right, rgb(24, 33, 69), rgb(227, 91, 52)) 1;
+}
+
+
+
