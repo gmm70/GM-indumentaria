@@ -246,7 +246,7 @@
     footer {
         height: 360px;
     }
-}
+
 
 /*este @media screen and (min-width:426px) lo utilicé para que los componentes y sus medidas me quedaran de forma ordenada en la versión de desktop,
     no encontré otra forma de solucionarlo*/
@@ -403,7 +403,7 @@
     }
 
 
-}
+
 
 
 /*comienzo del css de toda la pagina*/
